@@ -1,0 +1,738 @@
+
+:root{
+
+--black:#2b2a2c;
+--gray:#b4b4b5;
+--lightgray:#dedede;
+--wight:#f9f9f9;
+}
+
+body{
+
+
+    color:gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+/* ПОДГОТОВЛЯЕМ ТЕЛО */
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+/* ПИШЕМ ОТСТУПЫ ДЛЯ ЗАГОЛОВКОВ  */
+
+
+P{
+
+margin: 0 0 1rem;    
+}
+/* ОТСТУПЫ ДЛЯ ПАРАГРАФОВ ТИПО ОТСТУПЫ СПРАВА РАВНЫЕ ИХ РАЗМЕРУ ШОБ ОНИ РОВНА БЫЛИИ*/
+*, 
+*:before,
+*:after{
+box-sizing:border-box;
+
+}
+
+.container{
+
+width:100%;
+max-width: 1200px;
+padding-left:1rem;
+padding-right:1rem;
+margin:0 auto;
+
+}
+
+.header{
+
+padding: 1.2rem 0;
+position:relative;
+
+
+}
+
+/* ДЕЛАЕМ КЛАСС ДЛЯ НАШЕГО НАВ БАРА И ДЛЯ НЕГО ОТСТУП В 1.2 РЕМА(СМОТРИМ В МАКЕТЕ) */
+
+.header_inner{
+ 
+    display:flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.logo{
+
+    display:flex;
+}
+.logo_avatar{
+
+border-radius: 50px;
+    
+}
+/*  ПРОПИСЫВАЕМ КЛАСС ДЛЯ ЛОГО */
+.logo_text{
+    padding-left: 9px;
+}
+/* ПРОПИСЫВАЕМ КЛАСС ДЛЯ КОНТЕНТА В ЛОГО В КОТОРОМ БУДЕМ ВЕСЬ ТЕКСТ НАХОДЯЩИЙСЯ РЯДОМ С ЛОГО */
+.logo_name{
+
+font-size: 1rem;
+color:var(--black);
+font-weight: bold;
+margin-bottom: 3px;
+}
+.logo_prof{
+font-size:0.75rem;
+color:var(--black);
+opacity:0.7;
+}
+
+.nav{
+
+display:flex;
+flex-wrap:wrap;
+    /* ЧТОБЫ ССЫЛКИ ПЕРЕНОСИЛИСЬ НА СЛЕД СТРОЧКИ */
+    text-align: center;
+    height:100%;
+}
+
+.nav_link{
+    margin-left: 2rem;
+    padding:0 0 4px;
+position:relative;
+font-size:0.9rem;
+color:var(--black);
+font-weight:bold;
+text-transform:uppercase;
+text-decoration:none;
+}
+
+.nav_link:hover{
+
+    border-bottom:2px solid #2b2a2c;
+
+}
+
+.intro_inner{
+
+ display:flex;
+ padding-top: 6.6rem;
+ padding-bottom: 8rem;
+ position:relative;
+ 
+ border-bottom: 1px solid;
+}
+.intro_greetings{
+
+  font-weight: 200;
+font-size: 2rem;
+    
+}
+
+.intro_name{
+
+color: var(--black);
+font-weight: bold;
+font-size: 3rem;   
+padding-bottom: 5px;
+}
+
+.intro_prof{
+
+    font-size:1.2rem;
+color:var(--black);
+opacity:0.7;
+}
+
+.social{
+
+padding-top: 2rem;
+padding-bottom: 2.5rem;
+display:flex;
+padding-left: 4px;
+}
+
+.social_link{
+
+    margin-right: 12px;
+    text-decoration: none;
+
+}
+.social_link:hover{
+
+transform: translateY(-5px);
+
+}
+
+.btn{
+    display:inline-block;
+    width: 200px;
+    
+    vertical-align: top;
+    padding:1rem 2rem;
+
+    border-radius: 60px;
+    border:1px solid black;
+    background: none;
+    cursor:pointer;
+
+    font-weight: 600;
+    font-size:1rem;
+    color:var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  text-align:center;
+  opacity:0.7;
+
+}
+.btn:hover{
+
+ background: black;
+ color:white;
+    
+}
+.intro_photo{
+position: absolute;
+margin-bottom: 1rem;
+right: 0;
+z-index: 1;
+bottom: -1px;
+
+}
+
+.works{
+
+margin-bottom: 7rem;
+
+
+}
+.work_zagolovok{
+
+margin-top: 3.5rem;
+margin-bottom: 1.5rem;
+text-align: center;
+font-size:2.8rem;
+color:var(--black);
+font-weight: bold;
+
+
+}
+
+.works_inner{
+
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work_logo{
+
+overflow: hidden;
+box-shadow: 0 0 4px black;
+border-radius: 10px;
+margin-bottom: 1rem;
+}
+
+.work_logo:hover{
+
+box-shadow:0 0 15px black; ;
+    
+}
+
+.work_content{
+
+ padding:1rem 0.8rem;
+ font-size:0.75rem;
+ text-transform: uppercase;
+ color:var(--black);
+
+
+}
+.work_cat{
+
+margin-bottom: 0.4rem;
+opacity: 0.7;
+
+}
+
+.work_title{
+display:flex;
+justify-content: space-between;
+font-size: 1rem;
+color:var(--black);
+font-weight:bold;
+text-transform:uppercase ;
+}
+
+.about_inner{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+
+}
+
+
+
+.about_picture{
+
+
+    max-width: 50%;
+    margin-left: 3.5rem;
+    
+}
+
+.about_content{
+
+   margin-top: 5rem ;
+   padding-left: 7.5rem;
+   max-width: 50%;
+}
+
+.aboutme{
+
+ font-size:2.8rem;
+ font-weight: bold;
+ color:var(--black);
+ text-transform: uppercase;
+    
+}
+.whyam{
+font-size: 5.2rem;
+font-weight: bold;
+color:var(--lightgray);
+text-transform: uppercase;
+}
+
+
+.about_text{
+
+margin-top:2.5rem ;
+margin-bottom: 3.5rem;
+font-size:0.75rem;
+font-weight: 300;
+color:var(--gray);
+}
+
+.about_btn{
+
+
+   
+    width: 200px;
+    
+    vertical-align: top;
+    padding:1rem 2rem;
+
+    border-radius: 60px;
+    border:1px solid black;
+    background: none;
+    cursor:pointer;
+
+    font-weight: 600;
+    font-size:1rem;
+    color:var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  text-align:center;
+  opacity:0.7;
+}
+.about_btn:hover{
+
+    background: black;
+    color:white;
+}
+
+.reviews{
+
+background: #332f30;
+padding:3rem 0;
+position:relative;
+}
+
+.reviews_inner{
+
+width:100%;
+max-width: 830px;
+margin:0 auto;
+
+
+}
+.reviews_text{
+
+    font-size: 0.9rem;
+    color:white;
+    text-align: center;
+}
+.reviews_logo{
+
+    width: 100%;
+    margin-top: -51px;
+    text-align: center;
+    position: absolute;
+  top:100%;
+  left:0;
+ z-index: 1;
+}
+
+.reviews_cpmpany{
+
+font-size: 1rem;
+color:var(--black);
+font-weight: bold;
+margin-bottom: 0.3rem;
+
+}
+.reviews_student{
+margin-bottom: 0.5rem;
+font-size:0.9rem;
+ color:var(--gray);
+ font-weight: 300;
+ font-style: italic;
+
+}
+
+.star_no{
+
+    opacity:0.3;
+}
+
+.reviws_rating{
+
+
+    margin-bottom: 6rem;
+}
+
+.courses{
+
+
+    margin-top: 14rem;
+    margin-bottom: 8rem;
+
+}
+
+.subtitle{
+text-align: center;
+font-size:1.1rem ;
+color:var(--gray);
+font-weight: 300;
+
+}
+
+.work_zagolovok{
+
+text-transform: uppercase;
+margin-bottom: 1rem;
+
+    
+}
+.courses_inner{
+
+margin-top: 3.5rem;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.course{
+    width: 33.33%;
+    padding: 0 1rem;
+}
+
+.course_name{
+margin-top: 1.3rem;
+font-size: 1.1rem;
+color:var(--black);
+font-weight: bold;
+margin-bottom: 0.6rem;
+}
+.course_cat{
+
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin-bottom: 1.1rem;
+}
+.course_text{
+    font-size: 0.75rem;
+    color:var(--gray);
+    font-weight: 300;
+   
+}
+.btn_edit{
+    margin-top: 1.5rem;
+    width:130px;
+    height: 34px;
+    font-size: 0.9rem;
+    padding:0.5rem 0.75rem;
+    font-weight: bold;
+   
+}
+.link{
+    margin-top: 1rem;
+    text-align: right;
+       
+   }
+.link_courses{
+font-size: 0.9rem;
+color:var(--gray);
+
+
+}
+
+.footer{
+
+background-color:#2b2a2c ;
+padding:1rem 0;
+
+}
+
+.footer_cop{
+
+
+    font-size:0.9rem;
+    color:#8d8d8e;
+    /* ПАДДИНГ ДЛЯ ВНУТРЕННИХ ЭЛЕМЕНТОВ ЧТОБЫ ОНИ ДВИГАЛИСЬ ВНУТРИ ОТ СВОИХ ГРАНИЦ */
+    padding-right: 1rem;
+    border-right: 1px solid #8d8d8e;
+    /* МАРДЖИН ЧТОБЫ ДВИГАЛИСЬ ОТ СВОИХ ВНЕШНИХ ГРАНИЦ ЗАТРАГИВАЯ ЧУЖИЕ БЛОКИ */
+    margin-right: 1rem;
+}
+
+.footer_info{
+display:flex;
+align-items: center;
+
+}
+
+.footer_social{
+    display:flex;
+    align-items: center;
+
+}
+
+.foot_link{
+    margin-right: 1rem;
+ text-decoration: none;
+}
+
+
+.footer_inner{
+
+    display:flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.footer_nav{
+
+display: flex;
+align-items: center;
+
+}
+.foot_nav_link{
+
+  font-size: 0.9rem;
+  color:var(--gray);
+  margin-left: 1rem;
+  text-decoration: none;  
+  font-weight:300;
+}
+/* ЗАКРЫВАЕТ МОДАЛЬНОЕ ОКНО НО НЕ РАБОТАЕТ В ОТЛИЧИЙ ОТ SHOW ТАК КАК НАПИСАН ВЫШЕ */
+.modal{
+
+    width: 100%;
+    height: 100%;
+    padding:1rem;
+    overflow:auto;
+    background-color: rgba(192, 192, 192, 0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    display: none;
+}
+.modal_dialog{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    position:relative;
+    background-color: white;
+    
+}
+.modal_title{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    padding: 3rem 0;
+}
+.modal_photo{
+width: 100%;
+height: 100%;
+
+}
+.btn_modal{
+
+    margin:3rem 0;
+}
+/* ОТОБРАЖАЕТ МОДАЛЬНОЕ ОКНО,ТАК КАК НАПИСАН НИЖЕ */
+.show{
+    display: flex;
+}
+@media(max-width:1199px){
+    .intro{
+
+        margin-top: -5rem;
+    }
+
+    .intro_photo{
+
+        width: 100%;
+        position: relative;
+
+    }
+    .intro_inner{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding:5rem 0;
+    }
+    .work_logo{
+        width: 98%;
+        margin: 1rem auto;
+        border-radius: 1.5rem;
+    }
+    .work_photo{
+        width: 100%;
+    }
+    .work_cat{
+        font-size:1.2rem;
+    }
+    .work_title{
+        font-size: 1.5rem;
+    }
+    .about_picture{
+       
+        width: 100;
+        height: 100%;
+        
+        
+        padding-left: 0;
+        margin: 0;
+       
+    }
+    .about_content{
+        margin-top: 0rem;
+        padding:0 2rem;
+        
+    }
+    .whyam{
+        font-size: 2rem;
+    }
+    .course{
+        width: 100%;
+        /* ЧТОБЫ КУРСЫ ИМЕЛИ МЕЖДУ СОБОЙ ОТСТУП */
+        margin-bottom: 3rem;
+        padding:0 1rem;
+    }
+    .course_photo{
+
+        width: 100%;
+    }
+    .course_name{
+
+font-size: 2rem;
+    }
+    .course_cat{
+        font-size: 1rem;
+    }
+
+    .course_text{
+        font-size: 1rem;
+       
+    }
+    .link_courses{
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:767px){
+
+    .logo{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding-bottom: 1rem;
+    }
+    .nav_link{
+        margin:0;
+    }
+    .logo_name{
+
+     font-size: 2.2rem;   
+    }
+    .work_zagolovok{
+
+        margin: 1rem auto;
+    }
+    .work_cat{
+
+        font-size:0.7rem;
+    }
+    .work_title{
+        font-size: 0.9rem;
+    }
+    .works{
+        margin-bottom: 2rem;
+    }
+    .about_inner{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .about_picture{
+     margin: 0 ;
+     padding: 0;
+     max-width: 100%;
+     height: 100%;
+    }
+    .about_content{
+        width: 100%;
+        margin-top: 3rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .course_name{
+
+        font-size: 1rem;
+
+    }
+    .course_cat{
+        font-size: 0.8rem;
+    }
+    .course_cat{
+        margin-bottom: 2rem;
+    }
+   
+    .footer{
+        margin-bottom: 7rem;
+        max-width: 100%;
+    }
+   
+    }
+    .footer_cop{
+        font-size: 0.8rem;
+    }
+    .footer_nav{
+        display: none;
+    }
+    .link{
+        text-align: center;
+        padding-top: 1.6rem;
+    }
+
